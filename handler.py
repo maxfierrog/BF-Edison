@@ -4,12 +4,14 @@
 
 # See https://docs.python-zeep.org/en/master/
 import zeep
+import os
 
 
 WSDL = "http://webreports.berkeley.edu/webreports?wsdl"
-KEYS = "keys"
-RELEVANCE = "relevance"
-OUT = "response"
+FILES = os.path.join(os.getcwd(), "files")
+KEYS = os.path.join(FILES, "keys")
+RELEVANCE = os.path.join(FILES, "relevance")
+OUT = os.path.join(FILES, "response")
 
 
 class Keys:
