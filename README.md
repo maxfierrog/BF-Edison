@@ -2,6 +2,10 @@
 
 Python tool using the BigFix WebReports SOAP API to reconcile the contents of the Edison inventory system.
 
+### Preliminaries
+
+Make sure to use the virtual environment. 
+
 ### Usage
 
 To make requests you will need a valid Berkeley Client Admininistrator account.
