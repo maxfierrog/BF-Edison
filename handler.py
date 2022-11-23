@@ -43,6 +43,5 @@ def write_response(response: list, to_filepath: str, delimiter: str) -> None:
 if __name__ == "__main__":
     keys = Keys(keyfile = KEYS)
     relevance = relevance_statement(RELEVANCE)
-    print(keys.user, keys.password)
     response = get_relevance_result(WSDL, relevance, keys.user, keys.password)
     write_response(response, OUT, "\n")
